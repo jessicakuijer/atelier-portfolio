@@ -17,39 +17,155 @@
   </head>
   <body>
     <!-- 3 - Ajouter un conteneur global et lui appliquer un style : police d'ecriture google font / marges et ombres -->
-    
+    <div class="wrapper">
     <!-- 4 Rajouter une balise entête qui contiendra le menu avec un id accueil -->
-      
+      <header id="accueil">
     <!-- 5 - ajouter une balise pour la navigation, une div avec un logo + lien vers la page d'accueil et alt sur l'image -->
-        
+        <nav class="desktop-nav">
+          <div class="logo">
+            <a href="#accueil">
+              <img src="assets/images/logo.png" alt="" />
+            </a>
+          </div>
     <!-- 6 - Ajouter une liste de liens pour la navigation avec un href / #id -->
-          
+          <ul>
+            <li>
+              <a href="#apropos">A Propos</a>
+            </li>
+            <li>
+              <a href="#projets">Mes projets</a>
+            </li>
+            <li>
+              <a href="#recommendations">Recommandations</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       <!-- 6 (VERSION MOBILE) - Prevoir un menu version mobile du même type que la version desktop avec une class nav différente   -->
-        
+        <nav class="mobile-nav">
+          <div class="logo">
+            <a href="#accueil">
+              <img src="assets/images/logo.png" alt="" />
+            </a>
+          </div>
       <!-- 6 (VERSION MOBILE) - Ajouter un bouton d'icone de menu pour la version mobile : une div avec une class "menu-btn" + image + balise alt-->
-          
+          <div class="menu-btn">
+            <img src="assets/images/menu.png" alt="" />
+          </div>
+        </nav>
 
       <!-- 6 (VERSION MOBILE) - insérer le reste des liens de navigation dans une balise dans une div + class "mobile-menu" -->
-        
+        <div class="mobile-nav-container">
+          <ul>
+            <li>
+              <a href="#apropos">A Propos</a>
+            </li>
+            <li>
+              <a href="#projets">Mes projets</a>
+            </li>
+            <li>
+              <a href="#recommendations">Recommandations</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       <!-- 7 - Ajouter un conteneur HERO : une div avec une class hero-container -->
-        
+        <div class="hero-container">
       <!-- 8 - Ajouter une div avec une class "align-left" dans laquelle s'inserera un paragraphe (je-suis) et deux titres de taille h2 -->
-          
+          <div class="content">
+            <p class="je-suis">
+              Je suis
+            </p>
+            <h2>
+              Développeuse web
+            </h2>
+            <h2>
+              & Désigneuse
+            </h2>
       <!-- 9 - Ajouter deux liens avec une class "btn" : Contact et CV (target _blank) -->
-           
+            <a href="#contact" class="btn">Contact</a>
+            <a href="/assets/docs/cv.pdf" target="_blank" class="btn">Mon CV</a>
       <!-- 10 - Ajouter les boutons réseaux sociaux  : une div avec une class "social-icons" + un lien et img dedans + balise alt et title -->
-            
+            <div class="social-icons">
+              <a href="#">
+                <img src="assets/images/twitter.png" alt="twitter" title="logo twitter" />
+              </a>
+
+              <a href="#">
+                <img src="assets/images/facebook.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="assets/images/linkedin.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="assets/images/instagram.png" alt="" />
+              </a>
+            </div>
+          </div>
       <!-- 11 - Ajouter une image de fond pour cette section HERO : une div avec class "hero-img" + img dedans -->
-          
+          <div class="hero-img">
+            <img src="assets/images/background.png" alt="" />
+          </div>
+
+        </div>
+      </header>
       <!-- 12 - section "a propos" -->
-      
+      <section id="apropos">
+        <h2>A Propos</h2>
+        <div class="section-content">
+          <p>
+            Récemment formée au développement web et technologies mobiles, j'utilise HTML5, CSS3, Javascript, PHP et progresse de manière autonome sur d’autres langages et frameworks comme REACT JS, VUE JS et SYMFONY. Très appliquée, je tends à produire un code de qualité et maintenable dans le temps.
+            Autodidacte, sociable, dynamique et faisant preuve de leadership, je parle anglais et français.
+            Je suis également mélomane et j'aime partager cette passion.
+          </p>
+          <p>
+            Je mets à votre service et au service des clients mon dynamisme, ma curiosité et ma rapide capacité d'adaptation afin d'apporter de nouvelles solutions digitales et innovantes.
+          </p>
+          <p>
+            Je suis également mélomane et j'aime partager cette passion.
+          </p>
+          <img src="assets/images/diplome.png" alt="" id="diplome">
+          <p class="inline-block">2020 - Titre RNCP Développeuse web et web mobile, obtenu.</p>
+        </div>
+      </section>
 
       <!-- 13 - element de separation -->
-      
+      <hr>
       <!-- 14 - section projets -->
-      
+      <section id="projets">
+        <h2>Mes Projets</h2>
+
+        <div class="section-content">
+          <div class="work-container">
+            <img src="assets/images/projet1.png" alt="" />
+            <img src="assets/images/projet2.png" alt="" />
+            <img src="assets/images/projet3.png" alt="" />
+            <img class="mobile-hide" src="assets/images/projet4.png" alt="" />
+            <img class="mobile-hide" src="assets/images/projet5.png" alt="" />
+            <img class="mobile-hide" src="assets/images/projet6.png" alt="" />
+          </div>
+          <a href="#" class="btn-projet">Voir tous les projets</a>
+        </div>
+      </section>
       <!-- 14 - section recommendations -->
-      
+      <section class="testimonials-section" id="recommendations">
+        <img class="quote-icon" src="assets/images/quote-icon.png" alt="" />
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus libero necessitatibus magnam eos quam, porro optio dolores facilis officiis beatae voluptatum doloribus ipsa, velit molestias nam blanditiis voluptate culpa tenetur!
+        </p>
+
+        <div class="author">
+          <img src="assets/images/recommendation.png" alt="" />
+          <h3>John Doe</h3>
+          <p class="company-name">Company Name</p>
+        </div>
+      </section>
 
       <!-- 15 - section contact avec formulaire https://formspree.io/ -->
       <section id="contact">

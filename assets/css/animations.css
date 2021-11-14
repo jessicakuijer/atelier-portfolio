@@ -1,0 +1,75 @@
+/* Animations */
+
+.hero-container p.je-suis {
+    animation: fade-down 2000ms forwards;
+  }
+  
+  .hero-container .content h2:nth-of-type(1),
+  .hero-container .content h2:nth-of-type(2),
+  .hero-container .social-icons img:nth-of-type(1),
+  .hero-container .social-icons img:nth-of-type(2),
+  .hero-container .social-icons img:nth-of-type(3),
+  .hero-container .social-icons img:nth-of-type(4),
+  .hero-container .content .btn {
+    opacity: 0;
+    animation: fade-in 2000ms forwards;
+  }
+  
+  .hero-container .content h2:nth-of-type(1) {
+    animation-delay: 1000ms;
+  }
+  
+  .hero-container .content h2:nth-of-type(2) {
+    animation-delay: 1400ms;
+  }
+  
+  .hero-container .social-icons img:nth-of-type(1) {
+    animation-delay: 2800ms;
+  }
+  
+  .hero-container .social-icons img:nth-of-type(2) {
+    animation-delay: 2900ms;
+  }
+  
+  .hero-container .social-icons img:nth-of-type(3) {
+    animation-delay: 3000ms;
+  }
+  
+  .hero-container .content .btn {
+    animation-delay: 2500ms;
+  }
+  
+  .hero-container .hero-img {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: fade-left 3000ms forwards;
+    animation-delay: 1200ms;
+  }
+  
+  @keyframes fade-down {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-left {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
