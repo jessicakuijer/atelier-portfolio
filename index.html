@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- (Final) Ajouter balises OG (Open Graph) après déploiement sur netlify -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <!-- 1 - Ajouter titre du site web -->
+    <title>Titre</title>
+    <!-- 2 - Ajouter style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-responsive.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+  </head>
+  <body>
+    <!-- 3 - Ajouter un conteneur global et lui appliquer un style : police d'ecriture google font / marges et ombres -->
+    
+    <!-- 4 Rajouter une balise entête qui contiendra le menu avec un id accueil -->
+      
+    <!-- 5 - ajouter une balise pour la navigation, une div avec un logo + lien vers la page d'accueil et alt sur l'image -->
+        
+    <!-- 6 - Ajouter une liste de liens pour la navigation avec un href / #id -->
+          
+      <!-- 6 (VERSION MOBILE) - Prevoir un menu version mobile du même type que la version desktop avec une class nav différente   -->
+        
+      <!-- 6 (VERSION MOBILE) - Ajouter un bouton d'icone de menu pour la version mobile : une div avec une class "menu-btn" + image + balise alt-->
+          
+
+      <!-- 6 (VERSION MOBILE) - insérer le reste des liens de navigation dans une balise dans une div + class "mobile-menu" -->
+        
+      <!-- 7 - Ajouter un conteneur HERO : une div avec une class hero-container -->
+        
+      <!-- 8 - Ajouter une div avec une class "align-left" dans laquelle s'inserera un paragraphe (je-suis) et deux titres de taille h2 -->
+          
+      <!-- 9 - Ajouter deux liens avec une class "btn" : Contact et CV (target _blank) -->
+           
+      <!-- 10 - Ajouter les boutons réseaux sociaux  : une div avec une class "social-icons" + un lien et img dedans + balise alt et title -->
+            
+      <!-- 11 - Ajouter une image de fond pour cette section HERO : une div avec class "hero-img" + img dedans -->
+          
+      <!-- 12 - section "a propos" -->
+      
+
+      <!-- 13 - element de separation -->
+      
+      <!-- 14 - section projets -->
+      
+      <!-- 14 - section recommendations -->
+      
+
+      <!-- 15 - section contact avec formulaire https://formspree.io/ -->
+      <section id="contact">
+        <h2>Contactez Moi</h2>
+
+        <!-- modify this form HTML and place wherever you want your form -->
+
+        <div class="section-content contact">
+          <form class="email" action="https://formspree.io/f/xoqlopnd" method="POST">
+          <img src="assets/images/mail-icon.png" alt="" />
+          <label class="contact-text">
+            Votre email:
+            <input type="email" name="_replyto" placeholder="email@provider.com" required>
+          </label>
+          <label class="contact-text">
+            Votre message:
+            <textarea name="message" class="textarea" placeholder="votre message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit" class="btn-submit">Envoyer</button>
+          </form>
+        </div>
+      </section>
+      <!-- 16 - ajouter le footer -->
+      <footer>
+        Tous droits réservés - name -  &copy; 2021
+      </footer>
+    </div>
+
+      <!-- 17 - script pour menu version mobile -->
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const mobileMenuContainer = document.querySelector(
+        ".mobile-nav-container"
+      );
+      const mobileMenuItems = document.querySelectorAll(
+        ".mobile-nav-container ul li a"
+      );
+
+      menuBtn.addEventListener("click", function () {
+        mobileMenuContainer.classList.toggle("active");
+      });
+
+      mobileMenuItems.forEach((i) => {
+        i.addEventListener("click", function () {
+          mobileMenuContainer.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
